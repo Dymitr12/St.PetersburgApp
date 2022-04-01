@@ -26,10 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1A-ht-7Jk">
-                                <rect key="frame" x="254" y="518" width="50" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="VlY-Rt-TMt"/>
-                                </constraints>
+                                <rect key="frame" x="274" y="518" width="30" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Info"/>
                                 <connections>
@@ -43,6 +40,7 @@
                             <constraint firstItem="VYA-84-7YE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HdB-7V-F5m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u1A-ht-7Jk" secondAttribute="trailing" constant="16" id="MJ1-Gf-MQM"/>
                             <constraint firstItem="VYA-84-7YE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XWG-6w-baQ"/>
+                            <constraint firstItem="u1A-ht-7Jk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="274" id="XgV-ih-cci"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u1A-ht-7Jk" secondAttribute="bottom" constant="20" id="eS2-iy-3vk"/>
                         </constraints>
                     </view>
@@ -81,23 +79,47 @@
             </objects>
             <point key="canvasLocation" x="1729" y="586"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Genre-->
         <scene sceneID="K7S-Yc-qhO">
             <objects>
-                <tableViewController id="TGu-of-oI8" sceneMemberID="viewController">
+                <tableViewController id="TGu-of-oI8" customClass="GenreViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ojw-qx-Zs6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nfu-LN-F3h">
-                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="genreCell" rowHeight="100" id="Nfu-LN-F3h" customClass="GenreCell" customModule="MovieForYou" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nfu-LN-F3h" id="dfx-PT-w13">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRx-4g-pit">
+                                            <rect key="frame" x="20" y="5" width="90" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="HRx-4g-pit" secondAttribute="height" multiplier="1:1" id="2oE-9d-k0W"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaq-Yz-XuQ">
+                                            <rect key="frame" x="130" y="29" width="170" height="42"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HRx-4g-pit" firstAttribute="leading" secondItem="dfx-PT-w13" secondAttribute="leading" constant="20" id="5Ki-f1-ggX"/>
+                                        <constraint firstItem="HRx-4g-pit" firstAttribute="centerY" secondItem="dfx-PT-w13" secondAttribute="centerY" id="LVn-hw-VZ6"/>
+                                        <constraint firstAttribute="trailing" secondItem="Gaq-Yz-XuQ" secondAttribute="trailing" constant="20" id="UZT-z1-YAt"/>
+                                        <constraint firstItem="Gaq-Yz-XuQ" firstAttribute="leading" secondItem="HRx-4g-pit" secondAttribute="trailing" constant="20" id="bLU-2j-n4M"/>
+                                        <constraint firstItem="Gaq-Yz-XuQ" firstAttribute="centerY" secondItem="dfx-PT-w13" secondAttribute="centerY" id="mQQ-Dd-WJW"/>
+                                        <constraint firstItem="HRx-4g-pit" firstAttribute="height" secondItem="dfx-PT-w13" secondAttribute="height" multiplier="0.9" id="tVC-sP-VFr"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="genreImage" destination="HRx-4g-pit" id="9cv-qX-GqF"/>
+                                    <outlet property="genreLabel" destination="Gaq-Yz-XuQ" id="Ghe-h7-lxH"/>
                                     <segue destination="IhE-y7-zvk" kind="show" id="B2n-Vi-zuP"/>
                                 </connections>
                             </tableViewCell>
@@ -107,7 +129,7 @@
                             <outlet property="delegate" destination="TGu-of-oI8" id="spX-2r-aX8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7Vo-GQ-Bff"/>
+                    <navigationItem key="navigationItem" title="Genre" id="7Vo-GQ-Bff"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bbc-Lp-KOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,10 +144,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pw5-ZF-8D4">
-                                <rect key="frame" x="20" y="64" width="280" height="232"/>
+                                <rect key="frame" x="20" y="111" width="280" height="208.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1NI-5B-bCD">
-                                <rect key="frame" x="20" y="316" width="280" height="232"/>
+                                <rect key="frame" x="20" y="339.5" width="280" height="208.5"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xdm-9J-myn"/>
@@ -155,8 +177,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y4N-JU-V0v" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fFD-iO-4gj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fFD-iO-4gj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -177,7 +199,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wor-Rq-VLs">
-                                <rect key="frame" x="20" y="64" width="280" height="250.5"/>
+                                <rect key="frame" x="20" y="111" width="280" height="250.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egh-hq-dob">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="218"/>
