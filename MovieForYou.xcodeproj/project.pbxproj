@@ -56,11 +56,12 @@
 		25F8016627EE284E0092C7FB /* MovieForYou */ = {
 			isa = PBXGroup;
 			children = (
-				25F8020127F6F19C0092C7FB /* Model */,
-				25F801FF27F6F1710092C7FB /* App */,
 				25F801FE27F6EFEE0092C7FB /* ViewControllers */,
+				25F8020127F6F19C0092C7FB /* Model */,
+				25F8020227F6F5DE0092C7FB /* Services */,
 				25F801FD27F6EFD70092C7FB /* Storyboards */,
 				25F8020027F6F18E0092C7FB /* Resources */,
+				25F801FF27F6F1710092C7FB /* App */,
 			);
 			path = MovieForYou;
 			sourceTree = "<group>";
@@ -105,6 +106,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		25F8020227F6F5DE0092C7FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
