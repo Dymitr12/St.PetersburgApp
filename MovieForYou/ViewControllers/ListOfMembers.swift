@@ -13,7 +13,7 @@ class ListOfMembers: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = editButtonItem
+        navigationItem.rightBarButtonItem = editButtonItem
         tableView.rowHeight = 80
        
 
