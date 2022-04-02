@@ -22,6 +22,8 @@
 		25F8020827F7307E0092C7FB /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8020727F7307E0092C7FB /* GenreCell.swift */; };
 		25F8020A27F730A10092C7FB /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8020927F730A10092C7FB /* GenreViewController.swift */; };
 		2729A6D727F8FCE600716AB0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2729A6D627F8FCE600716AB0 /* TestViewController.swift */; };
+		4ECB641027F902E400DE65A0 /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB640F27F902E400DE65A0 /* PosterViewController.swift */; };
+		4ECB641227F902F500DE65A0 /* RezultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB641127F902F500DE65A0 /* RezultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		25F8020727F7307E0092C7FB /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
 		25F8020927F730A10092C7FB /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
 		2729A6D627F8FCE600716AB0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		4ECB640F27F902E400DE65A0 /* PosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PosterViewController.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Programming/SwiftBook/MyProject/ImageTest/ImageTest/PosterViewController.swift"; sourceTree = "<group>"; };
+		4ECB641127F902F500DE65A0 /* RezultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RezultViewController.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Programming/SwiftBook/MyProject/ImageTest/ImageTest/RezultViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				2729A6D627F8FCE600716AB0 /* TestViewController.swift */,
+				4ECB640F27F902E400DE65A0 /* PosterViewController.swift */,
 				25F8016B27EE284E0092C7FB /* StartViewController.swift */,
+				4ECB641127F902F500DE65A0 /* RezultViewController.swift */,
 				25F8020927F730A10092C7FB /* GenreViewController.swift */,
 				25F8020727F7307E0092C7FB /* GenreCell.swift */,
 				231E796027F7B567006C53BD /* ListOfMembers.swift */,
@@ -216,8 +222,10 @@
 				25F8016C27EE284E0092C7FB /* StartViewController.swift in Sources */,
 				25F8016827EE284E0092C7FB /* AppDelegate.swift in Sources */,
 				231E796127F7B567006C53BD /* ListOfMembers.swift in Sources */,
+				4ECB641027F902E400DE65A0 /* PosterViewController.swift in Sources */,
 				231E795F27F7B424006C53BD /* ModelOfMembers.swift in Sources */,
 				25F8020627F72F9B0092C7FB /* Genre.swift in Sources */,
+				4ECB641227F902F500DE65A0 /* RezultViewController.swift in Sources */,
 				0486866327F86D7E00D857C0 /* Data Manager.swift in Sources */,
 				0486866127F86D7000D857C0 /* Model.swift in Sources */,
 				25F8020827F7307E0092C7FB /* GenreCell.swift in Sources */,
