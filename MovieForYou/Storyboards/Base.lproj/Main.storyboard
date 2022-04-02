@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4N-JU-V0v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4N-JU-V0v">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
         <!--Poster View Controller-->
         <scene sceneID="t6x-Ke-Hmc">
             <objects>
-                <viewController id="uHF-fj-wOo" customClass="PosterViewController" customModule="ImageTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uHF-fj-wOo" customClass="PosterViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FHC-6L-eZU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,7 +234,7 @@
                     <connections>
                         <outlet property="imageViewDown" destination="xhn-eE-KF1" id="Ta9-vb-AvS"/>
                         <outlet property="imageViewUp" destination="9JJ-jW-qzE" id="uvh-pt-Wow"/>
-                        <segue destination="Ord-Xc-goG" kind="presentation" identifier="rezultView" modalPresentationStyle="fullScreen" id="1yY-bI-AMn"/>
+                        <segue destination="Ord-Xc-goG" kind="show" identifier="rezultView" id="1yY-bI-AMn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2t-nu-ISd" sceneMemberID="firstResponder"/>
@@ -244,19 +244,19 @@
         <!--Rezult View Controller-->
         <scene sceneID="d3I-rX-svB">
             <objects>
-                <viewController id="Ord-Xc-goG" userLabel="Rezult View Controller" customClass="RezultViewController" customModule="ImageTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ord-Xc-goG" userLabel="Rezult View Controller" customClass="RezultViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3l8-XS-c3f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-QR-9WP">
-                                <rect key="frame" x="20" y="20" width="280" height="488"/>
+                                <rect key="frame" x="20" y="111" width="280" height="397"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Error" translatesAutoresizingMaskIntoConstraints="NO" id="ejw-IE-DR6">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="230.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="185"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E38-ld-vmF">
-                                        <rect key="frame" x="0.0" y="257.5" width="280" height="230.5"/>
+                                        <rect key="frame" x="0.0" y="212" width="280" height="185"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -273,12 +273,20 @@
                             <constraint firstItem="7GB-QR-9WP" firstAttribute="leading" secondItem="Mwa-u6-VfB" secondAttribute="leading" constant="20" id="eFA-2D-UmB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Pga-8d-2Wp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BTp-6D-bno">
+                            <connections>
+                                <segue destination="T2a-eB-Wu8" kind="unwind" unwindAction="unwindFor:" id="WQL-sf-LR3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="labelImage" destination="E38-ld-vmF" id="jIA-4S-12a"/>
                         <outlet property="rezultImage" destination="ejw-IE-DR6" id="ODM-iz-0i6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7E-HJ-kz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="T2a-eB-Wu8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3289" y="-147"/>
         </scene>
