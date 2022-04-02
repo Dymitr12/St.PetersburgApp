@@ -47,15 +47,15 @@ struct Movies {
     }
 }
 
-struct Genre {
-    let title: String
-    let image: String
-    
-    static func getMovieList() -> [Genre] {
-        [
-            Genre(title: "Сomedy", image: "комедия"),
-            Genre(title: "Action", image: "боевик"),
-            Genre(title: "Thriller", image: "триллер")
-        ]
-    }
-}
+//struct Genre {
+//    let title: String
+//    let image: String
+//
+//    static func getMovieList() -> [Genre] {
+//        [
+//            Genre(title: "Сomedy", image: "комедия"),
+//            Genre(title: "Action", image: "боевик"),
+//            Genre(title: "Thriller", image: "триллер")
+//        ]
+//    }
+//}
