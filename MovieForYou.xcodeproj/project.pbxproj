@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0486866127F86D7000D857C0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486866027F86D7000D857C0 /* Model.swift */; };
+		0486866327F86D7E00D857C0 /* Data Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486866227F86D7E00D857C0 /* Data Manager.swift */; };
 		231E795F27F7B424006C53BD /* ModelOfMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E795E27F7B424006C53BD /* ModelOfMembers.swift */; };
 		231E796127F7B567006C53BD /* ListOfMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E796027F7B567006C53BD /* ListOfMembers.swift */; };
 		231E796327F7B634006C53BD /* MoreInformationAboutMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E796227F7B634006C53BD /* MoreInformationAboutMembers.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0486866027F86D7000D857C0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0486866227F86D7E00D857C0 /* Data Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Data Manager.swift"; path = "MovieForYou/Model/Data Manager.swift"; sourceTree = SOURCE_ROOT; };
 		231E795E27F7B424006C53BD /* ModelOfMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOfMembers.swift; sourceTree = "<group>"; };
 		231E796027F7B567006C53BD /* ListOfMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMembers.swift; sourceTree = "<group>"; };
 		231E796227F7B634006C53BD /* MoreInformationAboutMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationAboutMembers.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			children = (
 				25F8020527F72F9B0092C7FB /* Genre.swift */,
 				231E795E27F7B424006C53BD /* ModelOfMembers.swift */,
+				0486866027F86D7000D857C0 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		25F8020227F6F5DE0092C7FB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0486866227F86D7E00D857C0 /* Data Manager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				231E796127F7B567006C53BD /* ListOfMembers.swift in Sources */,
 				231E795F27F7B424006C53BD /* ModelOfMembers.swift in Sources */,
 				25F8020627F72F9B0092C7FB /* Genre.swift in Sources */,
+				0486866327F86D7E00D857C0 /* Data Manager.swift in Sources */,
+				0486866127F86D7000D857C0 /* Model.swift in Sources */,
 				25F8020827F7307E0092C7FB /* GenreCell.swift in Sources */,
 				231E796327F7B634006C53BD /* MoreInformationAboutMembers.swift in Sources */,
 				25F8016A27EE284E0092C7FB /* SceneDelegate.swift in Sources */,
