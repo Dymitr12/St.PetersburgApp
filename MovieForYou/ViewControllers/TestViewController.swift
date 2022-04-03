@@ -45,8 +45,6 @@ class PosterViewController: UIViewController {
         }
         
         
-        print(indexPath[1])
-        
         
         for i in movies {
             let image = UIImage(named: i)
@@ -54,9 +52,7 @@ class PosterViewController: UIViewController {
             posterName.append(i)
                 
         }
-        
-        recommendationPosters = DataManager().allThrillersMovies
-        
+                
         
         imageViewUp.image = posters[0]
         imageViewDown.image = posters[1]
@@ -80,8 +76,8 @@ class PosterViewController: UIViewController {
                     break
                 }
             } else {
-                let test = posterName[currentImageViewUp]
-                let winerPoster = recommendationPosters[test]
+                let name = posterName[currentImageViewUp]
+                let winerPoster = recommendationPosters[name]
                 performSegue(withIdentifier: "rezultView", sender: winerPoster)
             }
         }
@@ -97,8 +93,8 @@ class PosterViewController: UIViewController {
                     break
                 }
             } else {
-                let test = posterName[currentImageViewDown]
-                let winerPoster = recommendationPosters[test]
+                let name = posterName[currentImageViewDown]
+                let winerPoster = recommendationPosters[name]
                performSegue(withIdentifier: "rezultView", sender: winerPoster)
             }
         }
