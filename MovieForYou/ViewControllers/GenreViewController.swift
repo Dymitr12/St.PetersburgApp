@@ -38,7 +38,7 @@ class GenreViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let genreData = segue.destination as? PosterViewController else { return }
+        guard let genreData = segue.destination as? PostViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         genreData.indexPath = indexPath
     }

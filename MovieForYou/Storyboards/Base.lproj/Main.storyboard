@@ -143,8 +143,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y4N-JU-V0v" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fFD-iO-4gj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fFD-iO-4gj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="DrE-Ld-sQ4">
-                                <rect key="frame" x="20" y="111" width="280" height="375"/>
+                                <rect key="frame" x="20" y="64" width="280" height="375"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wDZ-Yl-X5v">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="307.5"/>
@@ -201,22 +201,25 @@
             </objects>
             <point key="canvasLocation" x="2528" y="585"/>
         </scene>
-        <!--Poster View Controller-->
+        <!--Post View Controller-->
         <scene sceneID="t6x-Ke-Hmc">
             <objects>
-                <viewController id="uHF-fj-wOo" customClass="PosterViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uHF-fj-wOo" customClass="PostViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FHC-6L-eZU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Оскар" translatesAutoresizingMaskIntoConstraints="NO" id="lf3-hC-ei8">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Ejs-QM-Zc3">
-                                <rect key="frame" x="16" y="111" width="288" height="437"/>
+                                <rect key="frame" x="16" y="64" width="288" height="484"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9JJ-jW-qzE">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="194.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="218"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhn-eE-KF1">
-                                        <rect key="frame" x="0.0" y="242.5" width="288" height="194.5"/>
+                                        <rect key="frame" x="0.0" y="266" width="288" height="218"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -224,7 +227,11 @@
                         <viewLayoutGuide key="safeArea" id="2YM-u0-pwl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lf3-hC-ei8" firstAttribute="leading" secondItem="2YM-u0-pwl" secondAttribute="leading" id="1Dj-AL-DQt"/>
+                            <constraint firstItem="2YM-u0-pwl" firstAttribute="trailing" secondItem="lf3-hC-ei8" secondAttribute="trailing" id="7Os-N8-S0v"/>
                             <constraint firstItem="2YM-u0-pwl" firstAttribute="bottom" secondItem="Ejs-QM-Zc3" secondAttribute="bottom" constant="20" id="Hvm-m6-vl8"/>
+                            <constraint firstItem="2YM-u0-pwl" firstAttribute="bottom" secondItem="lf3-hC-ei8" secondAttribute="bottom" id="SSL-fB-RIp"/>
+                            <constraint firstItem="lf3-hC-ei8" firstAttribute="top" secondItem="2YM-u0-pwl" secondAttribute="top" id="i2y-D9-yQH"/>
                             <constraint firstItem="2YM-u0-pwl" firstAttribute="trailing" secondItem="Ejs-QM-Zc3" secondAttribute="trailing" constant="16" id="kUF-iw-KOq"/>
                             <constraint firstItem="Ejs-QM-Zc3" firstAttribute="top" secondItem="2YM-u0-pwl" secondAttribute="top" constant="20" id="qda-fX-hyF"/>
                             <constraint firstItem="Ejs-QM-Zc3" firstAttribute="leading" secondItem="2YM-u0-pwl" secondAttribute="leading" constant="16" id="tBS-yk-1aG"/>
@@ -244,21 +251,24 @@
         <!--Rezult View Controller-->
         <scene sceneID="d3I-rX-svB">
             <objects>
-                <viewController id="Ord-Xc-goG" userLabel="Rezult View Controller" customClass="RezultViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ord-Xc-goG" userLabel="Rezult View Controller" customClass="ResultViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3l8-XS-c3f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Оскар2" translatesAutoresizingMaskIntoConstraints="NO" id="3pa-dN-EAX">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-QR-9WP">
-                                <rect key="frame" x="20" y="111" width="280" height="397"/>
+                                <rect key="frame" x="20" y="64" width="280" height="444"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Error" translatesAutoresizingMaskIntoConstraints="NO" id="ejw-IE-DR6">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="185"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="208.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E38-ld-vmF">
-                                        <rect key="frame" x="0.0" y="212" width="280" height="185"/>
+                                        <rect key="frame" x="0.0" y="235.5" width="280" height="208.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -268,9 +278,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7GB-QR-9WP" firstAttribute="top" secondItem="Mwa-u6-VfB" secondAttribute="top" constant="20" id="7pO-Eb-0M7"/>
+                            <constraint firstItem="3pa-dN-EAX" firstAttribute="leading" secondItem="Mwa-u6-VfB" secondAttribute="leading" id="BID-yb-PPV"/>
                             <constraint firstAttribute="bottom" secondItem="7GB-QR-9WP" secondAttribute="bottom" constant="60" id="K1g-jJ-smN"/>
                             <constraint firstAttribute="trailing" secondItem="7GB-QR-9WP" secondAttribute="trailing" constant="20" id="OaF-Y9-lF7"/>
+                            <constraint firstItem="Mwa-u6-VfB" firstAttribute="bottom" secondItem="3pa-dN-EAX" secondAttribute="bottom" id="VNv-TE-ODb"/>
+                            <constraint firstItem="Mwa-u6-VfB" firstAttribute="trailing" secondItem="3pa-dN-EAX" secondAttribute="trailing" id="bay-CL-Dvs"/>
                             <constraint firstItem="7GB-QR-9WP" firstAttribute="leading" secondItem="Mwa-u6-VfB" secondAttribute="leading" constant="20" id="eFA-2D-UmB"/>
+                            <constraint firstItem="3pa-dN-EAX" firstAttribute="top" secondItem="Mwa-u6-VfB" secondAttribute="top" id="xa0-28-53n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pga-8d-2Wp">
@@ -293,6 +307,8 @@
     </scenes>
     <resources>
         <image name="Error" width="1440" height="2560"/>
+        <image name="Оскар" width="612" height="408"/>
+        <image name="Оскар2" width="612" height="612"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
