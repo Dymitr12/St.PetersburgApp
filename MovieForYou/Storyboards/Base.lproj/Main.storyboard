@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4N-JU-V0v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4N-JU-V0v">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,15 +37,26 @@
                                     <segue destination="u2b-pD-onY" kind="show" identifier="toTableView" id="Vqm-0Z-dxR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3n-UO-ZJz">
+                                <rect key="frame" x="20" y="357" width="280" height="143.5"/>
+                                <string key="text">Мы подберём для вас рекомендацию что посмотреть!  
+Выберите жанр, и нажимайте на те фильмы которые вам нравятся больше.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="P3n-UO-ZJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HZo-ek-cpQ"/>
                             <constraint firstItem="VYA-84-7YE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HdB-7V-F5m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u1A-ht-7Jk" secondAttribute="trailing" constant="16" id="MJ1-Gf-MQM"/>
                             <constraint firstItem="VYA-84-7YE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XWG-6w-baQ"/>
                             <constraint firstItem="u1A-ht-7Jk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="XgV-ih-cci"/>
+                            <constraint firstAttribute="trailing" secondItem="P3n-UO-ZJz" secondAttribute="trailing" constant="20" id="dRa-uf-3SU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u1A-ht-7Jk" secondAttribute="bottom" constant="20" id="eS2-iy-3vk"/>
+                            <constraint firstItem="P3n-UO-ZJz" firstAttribute="top" secondItem="VYA-84-7YE" secondAttribute="bottom" constant="40" id="ucF-Nl-FjG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HpX-RO-akd">
@@ -316,6 +328,12 @@
         <image name="Error" width="1440" height="2560"/>
         <image name="Оскар" width="612" height="408"/>
         <image name="Оскар2" width="612" height="612"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
