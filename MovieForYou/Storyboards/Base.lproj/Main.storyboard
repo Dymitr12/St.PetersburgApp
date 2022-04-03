@@ -170,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="DrE-Ld-sQ4">
-                                <rect key="frame" x="20" y="111" width="280" height="375"/>
+                                <rect key="frame" x="20" y="64" width="280" height="375"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wDZ-Yl-X5v">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="307.5"/>
@@ -196,7 +196,7 @@
                             <constraint firstItem="DrE-Ld-sQ4" firstAttribute="leading" secondItem="KdM-i9-WyH" secondAttribute="leading" constant="20" id="qqJ-bi-TC3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Подробная информация" id="Wli-mo-mQ6"/>
+                    <navigationItem key="navigationItem" title="Подробная информация" largeTitleDisplayMode="never" id="Wli-mo-mQ6"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="1Pw-Es-ogX" id="CeA-jF-rd3"/>
                         <outlet property="imageView" destination="wDZ-Yl-X5v" id="K64-w6-Gcd"/>
