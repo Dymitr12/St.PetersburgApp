@@ -263,6 +263,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Оскар2" translatesAutoresizingMaskIntoConstraints="NO" id="0qv-Ib-TbE">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-QR-9WP">
                                 <rect key="frame" x="20" y="64" width="280" height="444"/>
                                 <subviews>
@@ -272,7 +275,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E38-ld-vmF">
                                         <rect key="frame" x="0.0" y="235.5" width="280" height="208.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -284,7 +287,11 @@
                             <constraint firstItem="7GB-QR-9WP" firstAttribute="top" secondItem="Mwa-u6-VfB" secondAttribute="top" constant="20" id="7pO-Eb-0M7"/>
                             <constraint firstAttribute="bottom" secondItem="7GB-QR-9WP" secondAttribute="bottom" constant="60" id="K1g-jJ-smN"/>
                             <constraint firstAttribute="trailing" secondItem="7GB-QR-9WP" secondAttribute="trailing" constant="20" id="OaF-Y9-lF7"/>
+                            <constraint firstItem="Mwa-u6-VfB" firstAttribute="trailing" secondItem="0qv-Ib-TbE" secondAttribute="trailing" id="aff-DG-zAC"/>
                             <constraint firstItem="7GB-QR-9WP" firstAttribute="leading" secondItem="Mwa-u6-VfB" secondAttribute="leading" constant="20" id="eFA-2D-UmB"/>
+                            <constraint firstItem="0qv-Ib-TbE" firstAttribute="top" secondItem="Mwa-u6-VfB" secondAttribute="top" id="kYB-dI-kQr"/>
+                            <constraint firstItem="Mwa-u6-VfB" firstAttribute="bottom" secondItem="0qv-Ib-TbE" secondAttribute="bottom" id="qxr-mg-PLw"/>
+                            <constraint firstItem="0qv-Ib-TbE" firstAttribute="leading" secondItem="Mwa-u6-VfB" secondAttribute="leading" id="tGG-3B-R2K"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pga-8d-2Wp">
@@ -308,6 +315,7 @@
     <resources>
         <image name="Error" width="1440" height="2560"/>
         <image name="Оскар" width="612" height="408"/>
+        <image name="Оскар2" width="612" height="612"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
