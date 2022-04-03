@@ -215,13 +215,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Ejs-QM-Zc3">
-                                <rect key="frame" x="16" y="111" width="288" height="437"/>
+                                <rect key="frame" x="16" y="64" width="288" height="484"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9JJ-jW-qzE">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="194.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="218"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhn-eE-KF1">
-                                        <rect key="frame" x="0.0" y="242.5" width="288" height="194.5"/>
+                                        <rect key="frame" x="0.0" y="266" width="288" height="218"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -235,7 +235,7 @@
                             <constraint firstItem="Ejs-QM-Zc3" firstAttribute="leading" secondItem="2YM-u0-pwl" secondAttribute="leading" constant="16" id="tBS-yk-1aG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KOf-WC-fje">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="KOf-WC-fje">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="Fxu-Pi-bEB"/>
                     </navigationItem>
                     <connections>
@@ -257,13 +257,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-QR-9WP">
-                                <rect key="frame" x="20" y="111" width="280" height="397"/>
+                                <rect key="frame" x="20" y="64" width="280" height="444"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Error" translatesAutoresizingMaskIntoConstraints="NO" id="ejw-IE-DR6">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="185"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="208.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E38-ld-vmF">
-                                        <rect key="frame" x="0.0" y="212" width="280" height="185"/>
+                                        <rect key="frame" x="0.0" y="235.5" width="280" height="208.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
