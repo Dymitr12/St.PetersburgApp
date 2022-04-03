@@ -18,6 +18,7 @@ class RezultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         rezultImage.image = UIImage(named: winerPoster)
         labelImage.text = "Судя по вашему выбору, рекомендуем посмотреть - \(String (winerPoster ?? "Error"))"
     }
