@@ -214,6 +214,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Оскар" translatesAutoresizingMaskIntoConstraints="NO" id="zi3-TL-VEB">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Ejs-QM-Zc3">
                                 <rect key="frame" x="16" y="64" width="288" height="484"/>
                                 <subviews>
@@ -229,7 +232,11 @@
                         <viewLayoutGuide key="safeArea" id="2YM-u0-pwl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zi3-TL-VEB" firstAttribute="top" secondItem="2YM-u0-pwl" secondAttribute="top" id="CDR-pJ-Qhx"/>
+                            <constraint firstItem="2YM-u0-pwl" firstAttribute="trailing" secondItem="zi3-TL-VEB" secondAttribute="trailing" id="DQ4-Ev-UC2"/>
                             <constraint firstItem="2YM-u0-pwl" firstAttribute="bottom" secondItem="Ejs-QM-Zc3" secondAttribute="bottom" constant="20" id="Hvm-m6-vl8"/>
+                            <constraint firstItem="zi3-TL-VEB" firstAttribute="leading" secondItem="2YM-u0-pwl" secondAttribute="leading" id="K13-hF-DJu"/>
+                            <constraint firstItem="2YM-u0-pwl" firstAttribute="bottom" secondItem="zi3-TL-VEB" secondAttribute="bottom" id="VjV-Lk-dnI"/>
                             <constraint firstItem="2YM-u0-pwl" firstAttribute="trailing" secondItem="Ejs-QM-Zc3" secondAttribute="trailing" constant="16" id="kUF-iw-KOq"/>
                             <constraint firstItem="Ejs-QM-Zc3" firstAttribute="top" secondItem="2YM-u0-pwl" secondAttribute="top" constant="20" id="qda-fX-hyF"/>
                             <constraint firstItem="Ejs-QM-Zc3" firstAttribute="leading" secondItem="2YM-u0-pwl" secondAttribute="leading" constant="16" id="tBS-yk-1aG"/>
@@ -300,6 +307,7 @@
     </scenes>
     <resources>
         <image name="Error" width="1440" height="2560"/>
+        <image name="Оскар" width="612" height="408"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
