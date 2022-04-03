@@ -15,7 +15,7 @@ class GenreViewController: UITableViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 200
+        tableView.rowHeight = 250
     }
 
     // MARK: - Table view data source
