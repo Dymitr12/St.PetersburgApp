@@ -9,12 +9,13 @@ import UIKit
 
 class GenreViewController: UITableViewController {
     
-    //MARK: -Private Methods
+    // MARK: -Private Methods
     private var genre = Genre.getMovieList()
 
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 250
+        tableView.rowHeight = 200
     }
 
     // MARK: - Table view data source
