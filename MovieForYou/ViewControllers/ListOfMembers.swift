@@ -10,13 +10,14 @@ import UIKit
 class ListOfMembers: UITableViewController {
 
     private var memberList = Member.getMemberList()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = editButtonItem
         editButtonItem.title = "Изменить"
         tableView.rowHeight = 80
-       
+        
 
     }
 
@@ -67,5 +68,11 @@ extension ListOfMembers {
         let member = memberList.remove(at: sourceIndexPath.row)
         memberList.insert(member, at: destinationIndexPath.row)
     }
+    
+    override func setEditing (_ editing:Bool, animated:Bool)
+    {
+        super.setEditing(editing,animated:false)
+       self.editButtonItem.title = editing ? "Готово" : "Изменить"
+     }
 }
 
