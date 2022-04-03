@@ -78,7 +78,6 @@
 			children = (
 				25F801FE27F6EFEE0092C7FB /* ViewControllers */,
 				25F8020127F6F19C0092C7FB /* Model */,
-				25F8020227F6F5DE0092C7FB /* Services */,
 				25F801FD27F6EFD70092C7FB /* Storyboards */,
 				25F8020027F6F18E0092C7FB /* Resources */,
 				25F801FF27F6F1710092C7FB /* App */,
@@ -132,15 +131,16 @@
 			children = (
 				25F8020527F72F9B0092C7FB /* Genre.swift */,
 				231E795E27F7B424006C53BD /* ModelOfMembers.swift */,
-				0486866027F86D7000D857C0 /* Model.swift */,
+				0486866227F86D7E00D857C0 /* Data Manager.swift */,
+				2798E2DC27F9F8C000B3D94F /* Services */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		25F8020227F6F5DE0092C7FB /* Services */ = {
+		2798E2DC27F9F8C000B3D94F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0486866227F86D7E00D857C0 /* Data Manager.swift */,
+				0486866027F86D7000D857C0 /* Model.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
