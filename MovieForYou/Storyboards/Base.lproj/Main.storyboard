@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4N-JU-V0v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4N-JU-V0v">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,7 +47,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u1A-ht-7Jk" secondAttribute="bottom" constant="20" id="eS2-iy-3vk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HpX-RO-akd"/>
+                    <navigationItem key="navigationItem" id="HpX-RO-akd">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="mLF-2V-NPN"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +235,9 @@
                             <constraint firstItem="Ejs-QM-Zc3" firstAttribute="leading" secondItem="2YM-u0-pwl" secondAttribute="leading" constant="16" id="tBS-yk-1aG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KOf-WC-fje"/>
+                    <navigationItem key="navigationItem" id="KOf-WC-fje">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="Fxu-Pi-bEB"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageViewDown" destination="xhn-eE-KF1" id="Ta9-vb-AvS"/>
                         <outlet property="imageViewUp" destination="9JJ-jW-qzE" id="uvh-pt-Wow"/>
@@ -277,7 +281,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pga-8d-2Wp">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BTp-6D-bno">
+                        <barButtonItem key="rightBarButtonItem" title="Завершить" id="BTp-6D-bno">
                             <connections>
                                 <segue destination="T2a-eB-Wu8" kind="unwind" unwindAction="unwindFor:" id="WQL-sf-LR3"/>
                             </connections>
