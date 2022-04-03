@@ -14,6 +14,7 @@ class ListOfMembers: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = editButtonItem
+        editButtonItem.title = "Изменить"
         tableView.rowHeight = 80
        
 
