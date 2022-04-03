@@ -98,26 +98,29 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRx-4g-pit">
-                                            <rect key="frame" x="20" y="5" width="90" height="90"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="HRx-4g-pit" secondAttribute="height" multiplier="1:1" id="2oE-9d-k0W"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaq-Yz-XuQ">
-                                            <rect key="frame" x="130" y="29" width="170" height="42"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GRK-pD-w6B">
+                                            <rect key="frame" x="20" y="5" width="280" height="90"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRx-4g-pit">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="HRx-4g-pit" secondAttribute="height" multiplier="1:1" id="2oE-9d-k0W"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaq-Yz-XuQ">
+                                                    <rect key="frame" x="95" y="0.0" width="185" height="90"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="HRx-4g-pit" firstAttribute="leading" secondItem="dfx-PT-w13" secondAttribute="leading" constant="20" id="5Ki-f1-ggX"/>
-                                        <constraint firstItem="HRx-4g-pit" firstAttribute="centerY" secondItem="dfx-PT-w13" secondAttribute="centerY" id="LVn-hw-VZ6"/>
-                                        <constraint firstAttribute="trailing" secondItem="Gaq-Yz-XuQ" secondAttribute="trailing" constant="20" id="UZT-z1-YAt"/>
-                                        <constraint firstItem="Gaq-Yz-XuQ" firstAttribute="leading" secondItem="HRx-4g-pit" secondAttribute="trailing" constant="20" id="bLU-2j-n4M"/>
-                                        <constraint firstItem="Gaq-Yz-XuQ" firstAttribute="centerY" secondItem="dfx-PT-w13" secondAttribute="centerY" id="mQQ-Dd-WJW"/>
-                                        <constraint firstItem="HRx-4g-pit" firstAttribute="height" secondItem="dfx-PT-w13" secondAttribute="height" multiplier="0.9" id="tVC-sP-VFr"/>
+                                        <constraint firstAttribute="trailing" secondItem="GRK-pD-w6B" secondAttribute="trailing" constant="20" symbolic="YES" id="ZAs-Lw-ON9"/>
+                                        <constraint firstItem="GRK-pD-w6B" firstAttribute="leading" secondItem="dfx-PT-w13" secondAttribute="leading" constant="20" id="pfb-My-gUq"/>
+                                        <constraint firstItem="GRK-pD-w6B" firstAttribute="height" secondItem="dfx-PT-w13" secondAttribute="height" multiplier="0.9" id="qpg-Hp-YvC"/>
+                                        <constraint firstItem="GRK-pD-w6B" firstAttribute="centerY" secondItem="dfx-PT-w13" secondAttribute="centerY" id="rbK-Wk-BDd"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
