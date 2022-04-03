@@ -17,18 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYA-84-7YE">
-                                <rect key="frame" x="113.5" y="251" width="93" height="66"/>
+                                <rect key="frame" x="88" y="251" width="144" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Начать"/>
                                 <connections>
                                     <segue destination="TGu-of-oI8" kind="show" id="N2N-an-Cu6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1A-ht-7Jk">
-                                <rect key="frame" x="274" y="518" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1A-ht-7Jk">
+                                <rect key="frame" x="143" y="514" width="161" height="34"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Info"/>
+                                <state key="normal" title="Участники проекта">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="u2b-pD-onY" kind="show" identifier="toTableView" id="Vqm-0Z-dxR"/>
                                 </connections>
@@ -40,7 +43,7 @@
                             <constraint firstItem="VYA-84-7YE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HdB-7V-F5m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u1A-ht-7Jk" secondAttribute="trailing" constant="16" id="MJ1-Gf-MQM"/>
                             <constraint firstItem="VYA-84-7YE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XWG-6w-baQ"/>
-                            <constraint firstItem="u1A-ht-7Jk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="274" id="XgV-ih-cci"/>
+                            <constraint firstItem="u1A-ht-7Jk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="XgV-ih-cci"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u1A-ht-7Jk" secondAttribute="bottom" constant="20" id="eS2-iy-3vk"/>
                         </constraints>
                     </view>
@@ -48,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="177"/>
+            <point key="canvasLocation" x="903.75" y="176.40845070422534"/>
         </scene>
         <!--List Of Members-->
         <scene sceneID="9e9-zZ-aj4">
@@ -82,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="1757" y="584"/>
         </scene>
-        <!--Genre-->
+        <!--Жанр-->
         <scene sceneID="K7S-Yc-qhO">
             <objects>
                 <tableViewController id="TGu-of-oI8" customClass="GenreViewController" customModule="MovieForYou" customModuleProvider="target" sceneMemberID="viewController">
@@ -132,7 +135,7 @@
                             <outlet property="delegate" destination="TGu-of-oI8" id="spX-2r-aX8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Genre" id="7Vo-GQ-Bff"/>
+                    <navigationItem key="navigationItem" title="Жанр" id="7Vo-GQ-Bff"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bbc-Lp-KOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="6" y="176"/>
         </scene>
-        <!--Additional Information-->
+        <!--Подробная информация-->
         <scene sceneID="scZ-pW-zvH">
             <objects>
                 <viewController id="Ogz-UE-3KB" customClass="MoreInformationAboutMembers" customModule="MovieForYou" sceneMemberID="viewController">
@@ -191,7 +194,7 @@
                             <constraint firstItem="DrE-Ld-sQ4" firstAttribute="leading" secondItem="KdM-i9-WyH" secondAttribute="leading" constant="20" id="qqJ-bi-TC3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Additional Information" id="Wli-mo-mQ6"/>
+                    <navigationItem key="navigationItem" title="Подробная информация" id="Wli-mo-mQ6"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="1Pw-Es-ogX" id="CeA-jF-rd3"/>
                         <outlet property="imageView" destination="wDZ-Yl-X5v" id="K64-w6-Gcd"/>
@@ -295,6 +298,9 @@
         <image name="Error" width="1440" height="2560"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
