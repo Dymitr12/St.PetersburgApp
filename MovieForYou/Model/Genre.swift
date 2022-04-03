@@ -11,9 +11,9 @@ struct Genre {
     
     static func getMovieList() -> [Genre] {
         [
-            Genre(title: "Сomedy", image: "комедия"),
-            Genre(title: "Action", image: "боевик"),
-            Genre(title: "Thriller", image: "триллер")
+            Genre(title: "Комедия", image: "комедия"),
+            Genre(title: "Боевик", image: "боевик"),
+            Genre(title: "Триллер", image: "триллер")
         ]
     }
 }
